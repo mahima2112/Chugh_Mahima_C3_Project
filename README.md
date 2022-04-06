@@ -1,1 +1,1 @@
-# Chugh_Mahima_C3_Project
+Creating a project to find restaurants
