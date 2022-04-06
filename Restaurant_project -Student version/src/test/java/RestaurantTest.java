@@ -61,6 +61,12 @@ class RestaurantTest {
                 ()->restaurant.removeFromMenu("French fries"));
     }
     
-    
+    @Test
+    public void verify_total_price_for_Selected_items(){
+        List<Item> itemsSelected = new ArrayList<>();
+        List<Item> restaurantMenu = restaurant.getMenu();
+        itemsSelected.add(restaurantMenu.get(0));
+        assertEquals(119,restaurant.getTotalPrice(itemsSelected));
+    }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 }
